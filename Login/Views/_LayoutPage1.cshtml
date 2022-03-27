@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            @*<li>@Html.ActionLink("خروج", "Login", "Account")</li>*@
+            <li>
+                <button onclick="location.href='@Url.Action("login", "Account")'">خروج</button>
+            </li>
+        </ul>
+
+    </div>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Styles/font-awesome.css" rel="stylesheet" />
+    <link href="~/Styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
